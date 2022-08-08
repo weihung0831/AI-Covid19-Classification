@@ -1,4 +1,4 @@
-# covid19_classification
+# AI-Covid19-Classification
 Use Deep Learning technology to improve COVID-19 detection in X-rays.
 
 ### Source Dataset

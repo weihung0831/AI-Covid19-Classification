@@ -32,7 +32,6 @@ def vgg19_model(input_shape):
         loss="CategoricalCrossentropy",
         metrics="accuracy",
     )
-
     return model
 
 

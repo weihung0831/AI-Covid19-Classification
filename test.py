@@ -44,5 +44,5 @@ if __name__ == "__main__":
         y_test,
         class_name,
         model_path="./model/model.tf/",
-        confusion_matrix_plot_path="./model/confusion_matrix.png",
+        confusion_matrix_plot_path="./model/confusion_matrix.png"
     )

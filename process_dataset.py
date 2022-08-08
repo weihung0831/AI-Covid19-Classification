@@ -77,10 +77,10 @@ def load_label(data, class_name, class_num):
 
 
 if __name__ == "__main__":
-    covid_data = pd.read_excel("./COVID-19_Radiography_Dataset/COVID.metadata.xlsx")
-    normal_data = pd.read_excel("./COVID-19_Radiography_Dataset/Normal.metadata.xlsx")
+    covid_data = pd.read_excel("./dataset/COVID.metadata.xlsx")
+    normal_data = pd.read_excel("./dataset/Normal.metadata.xlsx")
     pneumonia_data = pd.read_excel(
-        "./COVID-19_Radiography_Dataset/Viral Pneumonia.metadata.xlsx"
+        "./dataset/Viral Pneumonia.metadata.xlsx"
     )
 
     covid_data = load_data(covid_data, class_num=0, class_name="covid")
@@ -103,9 +103,9 @@ if __name__ == "__main__":
     test_normal_data = normal_data[1051:]
     test_pneumonia_data = pneumonia_data[1040:]
 
-    covid_img_directory = "./COVID-19_Radiography_Dataset/COVID/"
-    normal_img_directory = "./COVID-19_Radiography_Dataset/Normal/"
-    pneumonia_img_directory = "./COVID-19_Radiography_Dataset/Viral Pneumonia/"
+    covid_img_directory = "./dataset/COVID/"
+    normal_img_directory = "./dataset/Normal/"
+    pneumonia_img_directory = "./dataset/Viral Pneumonia/"
 
     train_covid_img = load_image(train_covid_data, covid_img_directory)
     train_normal_img = load_image(train_normal_data, normal_img_directory)
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     y_test = OneHotEncoder().fit(y_test).transform(y_test).toarray()
 
     np.savez(
-        "./COVID-19_Radiography_Dataset/data.npz",
+        "./dataset/data.npz",
         train_img=x_train,
         val_img=x_val,
         test_img=x_test,

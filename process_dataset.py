@@ -73,7 +73,6 @@ def load_label(data, class_name, class_num):
         label.append(i)
     data["label"] = label
     label = np.array(label, dtype="float32")
-
     return label
 
 

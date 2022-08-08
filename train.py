@@ -89,7 +89,7 @@ def training(input_shape, x_train, y_train, x_val, y_val, model_path, history_pl
 
 
 if __name__ == "__main__":
-    data = np.load(file="./COVID-19_Radiography_Dataset/data.npz")
+    data = np.load("dataset/data.npz")
     x_train, x_val, y_train, y_val = (
         data["train_img"],
         data["val_img"],

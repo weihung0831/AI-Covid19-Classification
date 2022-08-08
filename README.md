@@ -5,13 +5,13 @@ Use Deep Learning technology to improve COVID-19 detection in X-rays.
 https://drive.google.com/drive/folders/1sV1h9YF4xqMpcA6Mfv556X9IY20qfZXC?usp=sharing
 
 ### Step
-Step 1: python process_dataset.py<br>
+Step 1: run process_dataset.py<br>
 Process dataset and convert to npz dataset.<br>
 
-Step 2: python train.py<br>
+Step 2: run train.py<br>
 Training model.<br>
 
-Step 3: python test.py<br>
+Step 3: run test.py<br>
 Test test data and evaluation metrics.<br>
 
 ### Requirements
